@@ -1,0 +1,20 @@
+<%- include('../../partials/header.ejs') %>
+<body>
+  <%- include('../../partials/navbar.ejs') %>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-sm-7 text-center text-uppercase mb-3">
+        <h2 class="font-weight-bold">Cadastro de categorias</h2>
+      </div>
+      <div class="col-sm-7">
+        <form action="/categories/save" method="POST">
+          <input class="form-control mb-3" type="text" name="title" placeholder="Defina o titulo da categoria" id="">
+          <button class="btn btn-success w-100 text-center text-uppercase font-weight-bold">Cadastrar Categoria</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+<%- include('../../partials/footer.ejs') %>

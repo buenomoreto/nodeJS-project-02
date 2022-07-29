@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark mb-5">
+  <div class="container">
+    <a href="/" class="navbar-brand font-weight-bold">
+      <img src="/img/logo.png" alt="">
+    </a>
+    <ul class="navbar-nav mr-auto flex-row">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="/">Home</a>
+      </li>
+      <% categories.forEach(category => { %>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="/category/<%= category.slug %>"><%= category.title %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</nav>
